@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.4.1" rim:header="My Ministry">
   <rim:navigation mode="focus" />
-  <author href="http://www.toxzen.co.za" rim:copyright="Copyright Toxzen CC 2012">Toxzen</author>
   <name>My Ministry</name>
   <description>A ministry application for recording time and interest.</description>
-  <!-- 
-  
-  To do:
-  Need to un-comment pages for mapping interest, 
-  
-  <rim:permissions>
-    <rim:permit>access_location_services</rim:permit>
-  </rim:permissions>-->
+  <author href="http://www.toxzen.co.za" rim:copyright="Copyright Toxzen CC 2012">Toxzen</author>
   <icon src="images\icon_small.png" />
-  <content src="index.html" rim:allowInvokeParams="true" />
+  <icon src="images\icon_small.png" rim:hover="true" />
+  <content src="index.html" />
   <access uri="*" subdomains="true"></access>
   <feature id="blackberry.app" />
-  <feature id="blackberry.event"/>
+  <feature id="blackberry.app.event"/>
   <feature id="blackberry.ui.menu" />
   <feature id="blackberry.ui.dialog"/>
-  <!-- <feature id="blackberry.message" />
+  <feature id="blackberry.system.event" />
+  <feature id="blackberry.message" />
   <feature id="blackberry.message.sms" />
-  <feature id="blackberry.payment" />-->
+  <feature id="blackberry.payment" />
 </widget>

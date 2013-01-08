@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+
+<div data-bb-type="screen" data-bb-effect="slide-left">
+<script id="js_profile" type="text/javascript" src="js/profile.js"></script>
+  <div id="profile_title" data-bb-type="title" data-bb-caption="My Ministry" data-bb-back-caption="Cancel" data-bb-action-caption="Save" onactionclick="doSaveProfile()"></div>
+	<div data-bb-type="menu" >
+		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/icon2.png" onclick="doSaveProfile();">Save</div>
+		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/icon2.png" onclick="bb.popScreen();" data-bb-selected="true">Cancel</div>
+	</div>
+  <div data-bb-type="round-panel">
+    <div data-bb-type="panel-header">Profile</div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">First Name</div>
+      <input id="firstname" type="text" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Last Name</div>
+      <input id="lastname" type="text" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Email</div>
+      <input id="email" type="email" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Overseers Name</div>
+      <input id="overseer" type="text" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Overseers Phone</div>
+      <input id="overseer_tel" type="number" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Overseers Email</div>
+      <input id="overseer_email" type="email" value="" />
+    </div>
+  </div>
+  <div data-bb-type="action-bar" data-bb-back-caption="Back"></div>
+</div>
