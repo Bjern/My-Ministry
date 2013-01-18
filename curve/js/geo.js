@@ -133,3 +133,11 @@ function errorMessage(msg)
 {
 	//displayOutput("<span class='color:red'><b>Error</b>:" + msg + "</span>");
 }
+
+function doRefreshGPS() {
+
+    getPosition({ enableHighAccuracy: true });
+
+    document.getElementById('waiting').style.display = 'none';
+
+}
