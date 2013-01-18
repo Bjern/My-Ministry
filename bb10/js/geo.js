@@ -5,13 +5,13 @@ function create_map(){
 		
 		var values = gps_c;
 		values = values.split(",");
+		document.getElementById('waiting').style.display = 'none';
 		displayLocationInfo(values[0], values[1]);
 	} else {
+	    document.getElementById('waiting').style.display = 'none';
 		getPosition({enableHighAccuracy : true});
 	}
 	
-	document.getElementById('waiting').style.display = 'none';
-
 }
 
 function getPosition(params)

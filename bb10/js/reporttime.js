@@ -1,8 +1,8 @@
 function reporttime_addListItem() {
 
-	reporttime_Dashboard();
+    reporttime_Dashboard();
 
-	var listItem, listHeader, container, mcontainer, dataList = document.getElementById('dataListServiceTime');
+    var listItem, listHeader, container, mcontainer, dataList = document.getElementById('dataListServiceTime');
     var i = 0;
     var logLength = localStorage.length - 1;
     var monthHeader, monthHeaderNew;
@@ -357,13 +357,13 @@ function doSMSTime() {
 
         // Third check the overseers number is captured
         if (profilevalues[4] != null) {
-            sms_to = profilevalues[4];
+            sms_to = String(profilevalues[4]);
         } else {
             alert('You need to fill in your overseers cell number in profile.');
             return;
         }
 
-        blackberry.message.sms.send("Hi, my field service totals for " + returnMonth() + " are: " + document.getElementById('fsTotals_current').innerHTML + ' - Regards, ' + from, '0' + String(profilevalues[4]));
+        blackberry.message.sms.send("Hi, my field service totals for " + returnMonth() + " are: " + document.getElementById('fsTotals_current').innerHTML + ' - Regards, ' + from, sms_to);
 
     } catch (e) {
         alert("There was a problem smsing time records! " + e);

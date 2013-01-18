@@ -1,3 +1,8 @@
+function insertDate() {
+    var today = new Date();
+    document.getElementById('date').value = (today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate());
+}
+
 function doSaveInterest() {
 
     var interestvalues = new Array();
