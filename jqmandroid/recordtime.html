@@ -1,0 +1,30 @@
+﻿<HTML>
+<body>
+<div data-role="page" data-theme="b" id="recordtime">
+<script id="js_recordtime" type="text/javascript" src="js/recordtime.js"></script>
+    <div data-role="header" data-theme="b"><a href ="field.html" data-icon="delete">Cancel</a><h1>Record</h1><a href ="field.html" data-icon="check">Save</a></div>
+    <div class="ui-grid-a">
+        <div class="ui-block-a">Date</div>
+        <div class="ui-block-b"><input id="date" type="date" value="" placeholder="yyyy/mm/dd" data-mini="true"/></div>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
+            <div id="btnDate" data-role="button" data-style="stretch" onclick="insertDate();">Insert Date</div>
+        </div>
+    </div> 
+    <div class="ui-grid-a">
+        <div class="ui-block-a">Hours</div>
+        <div class="ui-block-b"><input id="hours" name="hours" type="number" value="" data-mini="true"/></div>
+        <div class="ui-block-a">Magazines</div>
+        <div class="ui-block-b"><input id="mags" name="mags" type="number" value="" data-mini="true"/></div>
+        <div class="ui-block-a">Brochures</div>
+        <div class="ui-block-b"><input id="booklets" name="booklets" type="number" value="" data-mini="true"/></div>
+        <div class="ui-block-a">Books</div>
+        <div class="ui-block-b"><input id="books" name="books" type="number" value="" data-mini="true"/></div>
+        <div class="ui-block-a">Returns</div>
+        <div class="ui-block-b"><input id="returns" name="returns" type="number" value="" data-mini="true"/></div>
+    </div>
+  <div data-type="action-bar" data-bb-back-caption="Back"></div>
+</div>
+</body>
+</HTML> 

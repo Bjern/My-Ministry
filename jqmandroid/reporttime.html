@@ -1,0 +1,26 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+
+<div data-role="page" data-theme="b" id="reporttime">
+<script id="js_reporttime" type="text/javascript" src="js/reporttime.js"></script>
+  <div data-type="title" data-bb-caption="My Ministry"></div>
+	<div data-type="menu" >
+        <div data-type="menu-item" data-bb-img="images/menu_icons/email.png" onclick="doNewTime();">Add time</div>
+		<div data-type="menu-item" data-bb-img="images/menu_icons/email.png" onclick="doEmailTime();">Email time</div>
+		<div data-type="menu-item" data-bb-img="images/menu_icons/email.png" onclick="doSMSTime();">SMS time</div>
+	</div>
+  <div id="waiting" style="text-align:center;padding-top:50px;padding-bottom:50px;">
+		<img src="images/loading1.gif" />
+  </div>
+  <div data-type="round-panel">
+  <div data-type="panel-header">All Time</div>
+  <div data-type="row"><div id="fsTotals"></div></div>
+  </div>
+  <div data-type="round-panel">
+  <div data-type="panel-header">Current Month</div>
+  <div data-type="row"><div id="fsTotals_current"></div></div>
+  </div>
+  <div id="dataListServiceTime" data-type="image-list">
+		
+  </div>
+  <div data-type="action-bar" data-bb-back-caption="Back"></div>
+</div>
