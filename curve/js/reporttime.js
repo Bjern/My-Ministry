@@ -36,7 +36,7 @@ function reporttime_addListItem() {
         var fs_key = sorted_lstorage[i];
         fs_key = fs_key.split("_");
 
-        // Get the item data based on the orted key
+        // Get the item data based on the sorted key
         var itemKey = fs_key[1] + '_' + fs_key[2];
         var values = localStorage.getItem(itemKey);
         values = values.split(";");
@@ -325,6 +325,8 @@ function doEmailTime() {
         message.body = "My field service totals for " + returnMonth() + " are: " + document.getElementById('fsTotals_current').innerHTML + ' - Regards, ' + from;
         message.send();
 
+        alert("Email to " + email_to + " has been sent.");
+
     } catch (e) {
         alert("There was a problem emailing time records! " + e + " Check your profile settings.");
     }
@@ -365,8 +367,16 @@ function doSMSTime() {
 
         blackberry.message.sms.send("Hi, my field service totals for " + returnMonth() + " are: " + document.getElementById('fsTotals_current').innerHTML + ' - Regards, ' + from, sms_to);
 
+        alert("SMS to " + sms_to + " has been sent.");
+
     } catch (e) {
         alert("There was a problem smsing time records! " + e);
     }
+
+}
+
+function doNewTime() {
+
+    bb.pushScreen('recordtime.html', 'recordtime');
 
 }

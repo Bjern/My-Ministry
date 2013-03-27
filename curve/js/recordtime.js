@@ -111,3 +111,23 @@ function edittime_updateInputs() {
     }
 	
 }
+
+// For deleting field service records
+function doDeleteTime() {
+
+    if (fs_id != '') {
+        var itemId = fs_id;
+    } else {
+        alert("You cannot delete an empty record! ");
+    }
+
+    try {
+
+        localStorage.removeItem(itemId);
+
+    } catch (e) {
+        alert("There was a problem deleting time records! " + e);
+    }
+
+    bb.popScreen();
+}

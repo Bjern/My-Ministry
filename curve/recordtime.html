@@ -4,14 +4,15 @@
 <script id="js_recordtime" type="text/javascript" src="js/recordtime.js"></script>
   <div data-bb-type="title" data-bb-caption="My Ministry" data-bb-back-caption="Cancel" data-bb-action-caption="Save" onactionclick="doSaveTime()"></div>
 	<div data-bb-type="menu" >
-		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/icon2.png" onclick="doSaveTime();">Save</div>
-		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/icon2.png" onclick="bb.popScreen();" data-bb-selected="true">Cancel</div>
+		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/pencil.png" onclick="doSaveTime();">Save</div>
+        <div data-bb-type="menu-item" data-bb-img="images/menu_icons/delete.png" onclick="doDeleteTime();">Delete</div>
+		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/cancel.png" onclick="bb.popScreen();" data-bb-selected="true">Cancel</div>
 	</div>
   <div data-bb-type="round-panel">
     <div data-bb-type="panel-header">Record Time</div>
     <div data-bb-type="row">
       <div data-bb-type="label">Date</div>
-      <input id="date" type="date" value="" />
+      <input id="date" type="date" value="" placeholder="yyyy/mm/dd" />
     </div>
     <div data-bb-type="row">
 	  <div id="btnDate" data-bb-type="button" data-bb-style="stretch" onclick="insertDate();">Insert Date</div>
