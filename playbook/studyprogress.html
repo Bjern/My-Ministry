@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+
+<div data-bb-type="screen" data-bb-effect="slide-left">
+<script id="js_studyprogress" type="text/javascript" src="js/studyprogress.js"></script>
+  <div data-bb-type="title" data-bb-caption="My Ministry" data-bb-back-caption="Cancel" data-bb-action-caption="Save" onactionclick="doSaveProgress()"></div>
+	<div data-bb-type="menu" >
+		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/icon2.png" onclick="doSaveProgress();">Save</div>
+		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/icon2.png" onclick="bb.popScreen();" data-bb-selected="true">Cancel</div>
+	</div>
+  <div data-bb-type="round-panel">
+    <div data-bb-type="panel-header">Record Study</div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Date</div>
+      <input id="date" type="date" value="" />
+    </div>
+    <div data-bb-type="row">
+	  <div id="btnDate" data-bb-type="button" data-bb-style="stretch" onclick="insertDate();">Insert Date</div>
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Student</div>
+      <input id="student" type="text" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Book</div>
+      <input id="publication" type="text" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Page</div>
+      <input id="pub_pg" type="number" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Subheading</div>
+      <input id="pub_section" type="text" value="" />
+    </div>
+    <div data-bb-type="row">
+      <div data-bb-type="label">Notes</div>
+      <textarea id="pub_notes" rows="4"></textarea>
+    </div>
+  </div>
+  <div data-bb-type="action-bar" data-bb-back-caption="Back"></div>
+</div>

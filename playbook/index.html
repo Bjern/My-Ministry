@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="x-blackberry-defaultHoverEffect" content="false" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link  rel="stylesheet" type="text/css" href="bbui-min.css" />
+<link rel="stylesheet" href="leaflet.css" />
+<script type="text/javascript" src="leaflet.js"></script>
+<script type="text/javascript" src="underscore.js"></script>
+<script type="text/javascript" src="bbui-min.js"></script>
+<script type="text/javascript">
+
+var fs_id = '';
+var sp_id = '';
+var rv_id = '';
+var use_i = '';
+var gps_c;
+
+bb.init({
+	bb10ActionBarDark: true,
+	bb10ControlsDark: true,
+	bb10ForPlayBook: true,
+	ondomready: function (element, id) {
+	if (id == "profile") {
+		doRecallProfile();
+    } else if (id == "reporttime") {
+		reporttime_addListItem();
+	} else if (id == "studydetails") {
+		studydetails_addListItem();
+	} else if (id == "showreturns") {
+		returndetails_addListItem();
+	} else if (id == "edittime") {
+		edittime_updateInputs();
+	} else if (id == "editinterest") {
+		editinterest_updateInputs();
+	} else if (id == "editstudy") {
+		editstudy_updateInputs();
+	} else if (id == 'map_screen') {
+		create_map();
+	}
+  }
+});
+
+</script>
+</head>
+<body onLoad="bb.pushScreen('menu.html', 'dashboard');">
+</body>
+</html>

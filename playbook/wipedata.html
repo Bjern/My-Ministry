@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+
+<div data-bb-type="screen" data-bb-effect="slide-left">
+  <div data-bb-type="title" data-bb-caption="My Ministry" data-bb-back-caption="Cancel" data-bb-action-caption="Wipe" onactionclick="localStorage.clear();bb.popScreen();"></div>
+	<div data-bb-type="menu" >
+		<div data-bb-type="menu-item" data-bb-img="images/menu_icons/icon2.png" onclick="bb.popScreen();" data-bb-selected="true">Cancel</div>
+	</div>
+  <div data-bb-type="round-panel">
+    <div data-bb-type="panel-header">Are you Sure?</div>
+    <p>Use this to reset or clear ALL your data.  This will include your profile, which is only used for reporting to an overseer, and also recorded interest and study track.  Its for security reasons or starting again.</p>
+    <div data-bb-type="row">
+	    <div id="btnWipeData" data-bb-type="button" data-bb-style="stretch" onclick="localStorage.clear();bb.popScreen();">Wipe Data</div>
+    </div>
+  </div>
+  <div data-bb-type="action-bar" data-bb-back-caption="Back"></div>
+</div>
