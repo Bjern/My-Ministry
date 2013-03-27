@@ -6,6 +6,9 @@ An HTML5 BlackBerry app for managing preaching by missionaries and ministers.
 ## The Basics
 You will need to know enough about BlackBerry app development to know what to do with this code.  You can use the current version of Ripple to test and compile the app.  You will need the various SDK softwares from BlackBerry.  If you would like to contribute to the code then please do so.  Since this project is in HTML5 it would not take much to port it to iOS for Apple or Android.  Only the bbui.js / css which is specific to BlackBerry would need to be ported.  JQuery Mobile could easily be inserted here as bbui.js shares some similarities.
 
+# Update
+The jqm... folders are the start of a JQuery Mobile version of this app.  The reason it was never done in JQuery in the first place was because of the high overhead with JQuery.  BBUI is designed to load scripts only when a screen is pushed and then remove them when a screen is popped.  JQuery at the time would load all into memory and leave it there.  This may have changed.
+
 ## Tested On
 
 * BlackBerry Dev Alpha 10.0.x Beta
